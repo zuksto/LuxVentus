@@ -29,6 +29,11 @@ body {
     width: 234px;
     height: 49px;
     margin-right: 255px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight scale-up */
 }
 
 .nav-links {
@@ -61,5 +66,25 @@ body {
     border-radius: 50%;
     background: #4CE0D7;
     cursor: pointer;
-    margin-left: 66.9px; 
+    margin-left: 66.9px; /* Ensure spacing is correct */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.search-icon i {
+    font-size: 24px;
+    color: #262626;
+    transition: transform 0.3s ease-in-out;
+}
+.search-icon img {
+    width: 24px; /* Adjust if needed */
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+.search-icon:hover img, 
+.search-icon:hover i {
+    transform: scale(1.2);
 }
