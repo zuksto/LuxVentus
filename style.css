@@ -72,15 +72,18 @@ nav {
 }
 
 section {
-    width: 1372px;
+    max-width: 1372px;
     height: 649px;
     background-image: url(https://s3-alpha-sig.figma.com/img/1bee/a1ef/0b5a8175f2b1b04184e84b4b4a68a3fa?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=imjMuC0cBcteo9EDsnoQBBE6t4zGFK6m8T~ENUDnNsScYY7Bqwf2jNMjbQMiX1bvYi1FWWDrpB227kdqJWinCE84mIeWeHSe36~vw-jC6ZYeVkgAzA1OSSNmupd582h1MsBD0vCZ8Mxi1kFKrzKiC8TCwuFnhFYugbQlvCIHRhRCh2UbupCib9PyGBW4ZOjYkCzTTpkaU5G2o1U0u0eqJpnC9qWV2wnnX378Fg2deMpr3RLx0nhwcZAs9aSzoi~SrqbVLAyRkF2rzAeZtjZ1Tql5OWJ9FaLBJUgT1lPfPBNokWEFHk~ihQtt69Sjh6BSIrXMg6CvsHc7slptgYwfQA__);
     background-position: center top;
+    background-size: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
     border-radius: 40px;
+
 }
 
 .first-section-main {
@@ -93,8 +96,9 @@ section {
 }
 
 .first-section-main-text {
-    width: 700px;
+    max-width: 700px;
     height: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -125,13 +129,15 @@ section {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
-
 .first-section-main-text p {
+    max-width: 494px;
     font-size: 20px;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
+
+
 
 /* Logo hover effect */
 .navigation-logo img {
@@ -153,3 +159,179 @@ section {
     opacity: 0.8; /* Add opacity effect */
 }
 
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 20px;
+    }
+    .navigation-logo img {
+        width: 180px;
+    }
+    .navigation-content ul {
+        gap: 20px;
+    }
+    .first-section-main-text {
+        padding-left: 40px;
+    }
+    .first-section-main-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navigation-content {
+        display: none; /* Hide nav links for mobile */
+    }
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .first-section-main-text {
+        padding-right: 450px;
+    }
+    .first-section-main-text h1 {
+        font-size: 25px;
+    }
+    .first-section-main-text p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding: 0 10px;
+    }
+    .navigation-logo img {
+        width: 150px;
+    }
+    .first-section-main {
+        justify-content: center;
+        text-align: center;
+    }
+    .first-section-main-text {
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .first-section-main-text h1 {
+        font-size: 32px;
+    }
+    .first-section-main-text p {
+        font-size: 16px;
+    }
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.mobile-nav.open {
+    display: block;
+}
+
+/* Show burger menu on tablets & mobile */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    .navigation-content {
+        display: none; /* Hide desktop menu */
+    }
+}
+
+.burger-menu.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-nav.open {
+    display: block;
+    right: 0;
+}
+
+/* Mobile Nav Hover Effects */
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav ul li {
+    padding: 12px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for mobile nav */
+.mobile-nav ul li:hover {
+    background-color: #4ce0d7;
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+.mobile-nav ul li a:hover {
+    color: #262626;
+}
