@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- ნავიგაციის ნაწილი -->
+    <!-- Header section with burger menu -->
     <div class="container">
       <div class="header">
         <nav>
@@ -28,7 +28,7 @@
             <img src="./assets/logo.png" alt="logo" />
           </div>
           <div class="navigation-content">
-            <ul>
+            <ul class="navigation-links">
               <li>
                 <a href="#">Fashion</a>
               </li>
@@ -36,7 +36,7 @@
                 <a href="#">Lifestyle</a>
               </li>
               <li>
-                <a href="#">Spirtual</a>
+                <a href="#">Spiritual</a>
               </li>
               <li>
                 <a href="#">Mental Health</a>
@@ -47,10 +47,22 @@
               <img src="./assets/search1.png" alt="" />
             </ul>
           </div>
+          <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </nav>
       </div>
     </div>
-    <!-- სექციის ნაწილი -->
+
+    <!-- Burger menu  -->
+        <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+
+    <!-- Section part -->
     <div class="container">
       <section>
         <div class="first-section-main">
