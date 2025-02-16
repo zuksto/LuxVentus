@@ -56,11 +56,24 @@
       </div>
     </div>
 
-    <!-- Burger menu  -->
-        <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Spiritual</a></li>
+        <li><a href="#">Mental Health</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- JavaScript for Burger Menu -->
+    <script>
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobileNav");
+        mobileNav.classList.toggle("open");
+      }
+    </script>
 
     <!-- Section part -->
     <div class="container">
