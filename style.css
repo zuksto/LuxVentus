@@ -2,173 +2,153 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    background: rgba(249, 249, 249, 1);
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+nav {
     width: 100%;
     height: 100px;
-    padding: 0 84px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    z-index: 1000;
 }
 
+.navigation-logo {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-.logo {
+.navigation-logo img {
     width: 234px;
-    height: 49px;
-    margin-right: 255px; 
-    transition: transform 0.3s ease-in-out;
+    height: 50px;
 }
 
-.logo:hover {
-    transform: scale(1.1); /* Slight scale-up */
-}
-
-.nav-links {
+.navigation-content {
+    width: 60%;
+    height: 50px;
     display: flex;
-    align-items: center;
-    gap: 58px; 
-}
-
-.nav-links li a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0%;
-    color: #262626;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-.nav-links li a:hover {
-    background: #4CE0D7;
-}
-
-.search-icon {
-    width: 47px;
-    height: 47px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: #4CE0D7;
-    cursor: pointer;
-    margin-left: 66.9px; /* Ensure spacing is correct */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    align-items: center;
 }
 
-.search-icon i {
-    font-size: 24px;
+.navigation-content ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navigation-content ul li {
+    white-space: nowrap;
+}
+
+.navigation-content a {
+    font-size: 14px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+/* Corrected hover effect */
+.navigation-content a:hover {
+    background-color: rgba(76, 224, 215, 1);
     color: #262626;
-    transition: transform 0.3s ease-in-out;
-}
-.search-icon img {
-    width: 24px; /* Adjust if needed */
-    height: 24px;
-    transition: transform 0.3s ease-in-out;
-}
-.search-icon:hover {
-    transform: scale(1.1);
-}
-
-.search-icon:hover img, 
-.search-icon:hover i {
-    transform: scale(1.2);
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.menu-toggle span {
-    width: 30px;
-    height: 3px;
-    background: #262626;
+    transform: scale(1.05); /* Slight zoom effect */
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1024px) {
-    .header {
-        padding: 0 3%;
-    }
-
-    .logo {
-        width: 180px;
-    }
-
-    .nav-links {
-        gap: 30px;
-    }
+section {
+    width: 1372px;
+    height: 649px;
+    background-image: url(https://s3-alpha-sig.figma.com/img/1bee/a1ef/0b5a8175f2b1b04184e84b4b4a68a3fa?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=imjMuC0cBcteo9EDsnoQBBE6t4zGFK6m8T~ENUDnNsScYY7Bqwf2jNMjbQMiX1bvYi1FWWDrpB227kdqJWinCE84mIeWeHSe36~vw-jC6ZYeVkgAzA1OSSNmupd582h1MsBD0vCZ8Mxi1kFKrzKiC8TCwuFnhFYugbQlvCIHRhRCh2UbupCib9PyGBW4ZOjYkCzTTpkaU5G2o1U0u0eqJpnC9qWV2wnnX378Fg2deMpr3RLx0nhwcZAs9aSzoi~SrqbVLAyRkF2rzAeZtjZ1Tql5OWJ9FaLBJUgT1lPfPBNokWEFHk~ihQtt69Sjh6BSIrXMg6CvsHc7slptgYwfQA__);
+    background-position: center top;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 40px;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 60%;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.3s ease-in-out;
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li:last-child {
-        margin-bottom: 20px;
-    }
-
-    .search-icon {
-        display: flex;
-        margin-right: 50px;
-    }
+.first-section-main {
+    width: 100%;
+    height: 649px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.175);
+    border-radius: 40px;
 }
 
-@media (max-width: 480px) {
-    .logo {
-        width: 160px;
-    }
-
-    .search-icon {
-        display: flex;
-        margin-right: 50px;
-    }
+.first-section-main-text {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    position: relative;
+    left: 70px;
+    top: 90px;
 }
 
-.menu-toggle.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+.first-section-main-text h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
 }
 
-.menu-toggle.open span:nth-child(2) {
-    opacity: 0;
+.first-section-main-text h1 {
+    font-size: 49px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
-.menu-toggle.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+.first-section-main-text span {
+    background: linear-gradient(90deg, #4CE0D7 43.06%, #8BA9F4 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.first-section-main-text p {
+    font-size: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* Logo hover effect */
+.navigation-logo img {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navigation-logo img:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    opacity: 0.8; /* Add opacity effect */
+}
+
+/* Search icon hover effect */
+.navigation-content img {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navigation-content img:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    opacity: 0.8; /* Add opacity effect */
 }
