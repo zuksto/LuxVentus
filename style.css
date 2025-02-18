@@ -179,7 +179,7 @@ nav {
     font-size: 40px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   nav {
     height: auto;
     flex-direction: column;
@@ -364,7 +364,6 @@ nav {
   align-items: center;
   justify-content: center;
   height: 291px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .box img {
@@ -380,26 +379,44 @@ nav {
   color: #262626;
   padding: 20px 38px 29px 37px;
 }
+
 .box button {
+  width: 143px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  color: rgba(38, 38, 38, 1);
-  border: none;
-  background: none;
-  padding: 10px 40px 9.12px 40px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-button:hover {
-  background-color: rgba(76, 224, 215, 1);
-  width: 143.81094039221549px;
   border-radius: 40px;
-  transform: rotate(0.47deg);
-  margin: 10px 40.1px 9.12px 40px;
+  background-color: rgba(76, 224, 215, 1);
+  cursor: pointer;
 }
+
+.boxes {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.box:hover button {
+  background-color: white; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); 
+  transition: all 0.3s ease-in-out; 
+  color:rgba(76, 224, 215, 1);
+}
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
 hr {
   border: 1px solid rgba(188, 188, 188, 1);
   max-width: 1267px;
@@ -427,11 +444,11 @@ hr {
 .fashion button {
   border: none;
   background: none;
-  margin-left: 129px;
-  margin-top: 34px;
+  margin-left: 48px;
+  margin-top: 24px;
   cursor: pointer;
-  margin-top: 34px;
-  max-width: 71px;
+  max-width: 233.950123456px;
+  height: 36.4983123px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -439,13 +456,9 @@ hr {
   line-height: 18px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-}
-.fashion button:hover {
-  max-width: 233.9px;
-  height: 36.4px;
   background-color: rgba(38, 38, 38, 1);
   border-radius: 40px;
-  transform: rotate(0.36deg);
+  box-sizing: border-box;
 }
 .mallory-reyn {
   display: flex;
@@ -516,6 +529,7 @@ hr {
   max-width: 51px;
   width: 100%;
   height: 40px;
+  margin-bottom: 5px;
 }
 .read-more p {
   max-width: 215px;
@@ -529,6 +543,11 @@ hr {
   color: rgba(76, 224, 215, 1);
   margin-left: 11px;
 }
+
+
+
+
+
 @media (max-width: 800px) {
   .third-section {
     max-width: 100%;
@@ -541,12 +560,17 @@ hr {
     height: 250px;
   }
 
-  .fashion button {
-    margin-left: 0;
-    max-width: 100%;
-    font-size: 12px;
-    text-align: left;
-    padding-left: 15px;
+  @media (max-width: 800px) { 
+    .fashion button {
+      margin-left: 48px; 
+      max-width: 233.950123456px; 
+      height: 36.4983123px;
+      width: 100%; 
+      font-size: 12px;
+      text-align: center; 
+      padding-left: 0; 
+      box-sizing: border-box;
+    }
   }
 
   .mallory-reyn {
@@ -592,123 +616,25 @@ hr {
   .read-more p {
     margin-top: 10px;
   }
+.footer-1 {
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-/* trending-luka */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-.containers {
-    max-width: 900px;
-    margin: 0 auto;
+.footer-last {
+
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.heading {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-.card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.card .normimg {
-    width: 100%;
-    height: 200px;
-}
-.card-content {
-    padding: 15px;
-}
-.category {
-        border: none;
-        background: none;
-        cursor: pointer;
-        max-width: 71px;
-        width: 100%;
-        font-family: "Poppins" sans-serif;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0%;
-        text-align: center;
-        color: rgba(255, 255, 255, 1);
-      }
-      .category:hover {
-        font-size: 12px;
-        font-weight: 700;
-        color: white;
-        background-color: #262626;
-        padding: 9px 51px;
-        border-radius: 40px;
-        transform: rotate(0.36deg);
-      }
-.title {
-    font-size: 18px;
-    font-weight: bold;
-}
-.description {
-    font-size: 14px;
-    color: gray;
-    margin: 10px 0;
-}
-.read-more {
-    color: #4CE0D7;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 5px;
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.full-width {
-    display: flex;
-    width: 100%;
-    height: 300px;
-    margin-top:88.2px;
 }
 
-.anything {
-    position: relative;
-    top: -265px
-}
-.fashion {
-    position: relative;
-    right: calc(110% - 20px);
-    top: -50px
-}
-
-
-
-.card-header{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.card-header img{
-    width: 50px;
-    height: 50px;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #BCBCBC;
-}
-
-.pfpname {
-    color: #BCBCBC;
-}
 
 
 .footer {
@@ -775,3 +701,4 @@ hr {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
