@@ -179,7 +179,7 @@ nav {
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   nav {
     height: auto;
     flex-direction: column;
@@ -592,6 +592,124 @@ hr {
   .read-more p {
     margin-top: 10px;
   }
+}
+/* trending-luka */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.containers {
+  max-width: 1204px;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card .normimg {
+  width: 100%;
+  max-width: 579px;
+  height: 278px;
+}
+.card-content {
+  padding: 23.34px 40px 36px 22px;
+}
+.category {
+  border: none;
+  background: none;
+  cursor: pointer;
+  max-width: 71px;
+  width: 100%;
+  font-family: "Poppins" sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 87.89px;
+}
+.category:hover {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background-color: #262626;
+  padding: 9px 51px;
+  border-radius: 40px;
+  transform: rotate(0.36deg);
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  width: 471px;
+}
+.description {
+  width: 464px;
+  height: 98px;
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+.read-more1 {
+  color: #4ce0d7;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.read-more1 img {
+  margin-right: 11px;
+}
+.full-width {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 88.2px;
+}
+
+.anything {
+  position: relative;
+  top: -330px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bcbcbc;
+  margin-right: 40px;
+}
+.pfpname {
+  color: #bcbcbc;
 }
 
 .footer {
