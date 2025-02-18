@@ -711,7 +711,153 @@ hr {
 .pfpname {
   color: #bcbcbc;
 }
+/* fifth section  */
+.last-section {
+  max-width: 1204px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.last-section-card {
+  display: flex;
+  gap: 46px;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 6px 0px #0000000d;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.last-section-card-texts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  gap: 32px;
+  padding-right: 58px;
+}
+
+.last-section-card-text1 {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: rgba(188, 188, 188, 1);
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.p {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.p p {
+  color: #bcbcbc;
+  font-size: 14px;
+}
+
+.last-section-card-image {
+  padding: 25px 304px 337px 34px;
+  border-radius: 20px;
+}
+
+.last-section-card-text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.last-section-card-text2 h1 {
+  font-size: 26px;
+  font-weight: 700;
+  max-width: 500px;
+}
+
+.last-section-card-text2 p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.last-section-card-image a {
+  border: none;
+  background: none;
+  cursor: pointer;
+  max-width: 71px;
+  width: 100%;
+  font-family: "Poppins" sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.last-section-card-image a:hover {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background-color: #262626;
+  padding: 9px 51px;
+  border-radius: 40px;
+  transform: rotate(0.36deg);
+}
+.last-section-arrow a {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4ce0d7;
+}
+
+.last-section-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.last-section-card1 {
+  width: 547.5px;
+  height: 367.4px;
+  background: url(./assets/Mask-group-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.last-section-card2 {
+  width: 547.5px;
+  height: 367.4px;
+  background: url(./assets/Mask-group-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.last-section-card3 {
+  width: 547.5px;
+  height: 367.4px;
+  background: url(./assets/Mask-group-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 69px;
+}
+@media (max-width: 768px) {
+  .last-section-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .last-section-card-image {
+    width: 100%;
+  }
+}
+
+/* footer */
 .footer {
   width: 100%;
   height: 308px;
