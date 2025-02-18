@@ -820,9 +820,6 @@ hr {
 }
 
 .last-section-card-image a {
-  border: none;
-  background: none;
-  cursor: pointer;
   max-width: 71px;
   width: 100%;
   font-family: "Poppins" sans-serif;
@@ -832,15 +829,9 @@ hr {
   letter-spacing: 0%;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-}
-.last-section-card-image a:hover {
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
   background-color: #262626;
-  padding: 9px 51px;
   border-radius: 40px;
-  transform: rotate(0.36deg);
+  padding: 9.42px 52.96px 9.17px 51.86px;
 }
 .last-section-arrow a {
   display: flex;
