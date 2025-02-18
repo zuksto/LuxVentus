@@ -179,7 +179,7 @@ nav {
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   nav {
     height: auto;
     flex-direction: column;
