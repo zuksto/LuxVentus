@@ -401,27 +401,20 @@ nav {
 }
 
 .boxes {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-
 .box:hover button {
-  background-color: white; 
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); 
-  transition: all 0.3s ease-in-out; 
-  color:rgba(76, 224, 215, 1);
+  background-color: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  color: rgba(76, 224, 215, 1);
 }
 .box:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-
-
-
 
 hr {
   border: 1px solid rgba(188, 188, 188, 1);
@@ -550,10 +543,6 @@ hr {
   margin-left: 11px;
 }
 
-
-
-
-
 @media (max-width: 800px) {
   .third-section {
     max-width: 100%;
@@ -566,15 +555,15 @@ hr {
     height: 250px;
   }
 
-  @media (max-width: 800px) { 
+  @media (max-width: 800px) {
     .fashion button {
-      margin-left: 48px; 
-      max-width: 233.950123456px; 
+      margin-left: 48px;
+      max-width: 233.950123456px;
       height: 36.4983123px;
-      width: 100%; 
+      width: 100%;
       font-size: 12px;
-      text-align: center; 
-      padding-left: 0; 
+      text-align: center;
+      padding-left: 0;
       box-sizing: border-box;
     }
   }
@@ -622,23 +611,22 @@ hr {
   .read-more p {
     margin-top: 10px;
   }
-.footer-1 {
-  width: 800px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.footer-last {
-
-  width: 800px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  .footer-1 {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-last {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 /* trending-luka */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
@@ -758,7 +746,7 @@ hr {
 .pfpname {
   color: #bcbcbc;
 }
-/* fifth section  */
+/* fifth section lana */
 .last-section {
   max-width: 1204px;
   width: 100%;
@@ -895,6 +883,13 @@ hr {
   background-size: cover;
   margin-bottom: 69px;
 }
+@media (max-width: 1408px) {
+  .last-section-card {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 768px) {
   .last-section-card {
     display: flex;
@@ -907,6 +902,7 @@ hr {
 
 /* footer */
 .footer {
+  max-width: 1440px;
   width: 100%;
   height: 308px;
   display: flex;
@@ -915,6 +911,10 @@ hr {
   flex-direction: column;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.211);
   border-radius: 40px 40px 0 0;
+  margin: 0 auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 69px;
 }
 
 .footer-1 {
@@ -970,3 +970,4 @@ hr {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
