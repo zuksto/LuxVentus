@@ -351,7 +351,6 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
   justify-content: center;
-  border-radius: 20px;
 }
 
 .box {
@@ -434,28 +433,32 @@ hr {
   margin: 0 auto;
   margin-bottom: 97px;
 }
-.third-section-first {
+.fashion {
   max-width: 1204px;
   height: 360.3041687011719px;
   background-image: url(./assets/image2.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;  /* Centers the content horizontally */
-  align-items: center;      /* Centers the content vertically */
 }
-
-.third-section-first a {
-  display: flex;
-  justify-content: center; /* Centers text horizontally within the <a> */
-  align-items: center;     /* Centers text vertically within the <a> */
-  gap: 46px;
-  background-color: white;
-  box-shadow: 0px 6px 6px 0px #0000000D;
-  border-radius: 20px;
-  padding: 20px 40px;      /* Add padding around the text */
+.fashion button {
+  border: none;
+  background: none;
+  margin-left: 48px;
+  margin-top: 24px;
+  cursor: pointer;
+  max-width: 233.950123456px;
+  height: 36.4983123px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(38, 38, 38, 1);
+  border-radius: 40px;
+  box-sizing: border-box;
 }
-
 .mallory-reyn {
   display: flex;
   align-items: center;
@@ -755,7 +758,7 @@ hr {
 }
 /* fifth section  */
 .last-section{
-  margin-top: 88px;
+  margin-top: 88.2px;
   margin-bottom: 69px;
   padding: 0 118px;
 }
@@ -847,66 +850,24 @@ hr {
 }
 
 .last-section-card1{
-  background: url(./assets/fashionCard1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.last-section-card2{
-  background: url(./assets/fashionCard2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.last-section-card3{
-  background: url(./assets/fashionCard3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.last-section-arrow a {
-  display: flex;
-  gap: 26px;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 700;
-  color: #4ce0d7;
-}
-
-.last-section-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.last-section-card1 {
-  width: 547.5px;
-  height: 367.4px;
   background: url(./assets/Mask-group-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.last-section-card2 {
-  width: 547.5px;
-  height: 367.4px;
+.last-section-card2{
   background: url(./assets/Mask-group-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.last-section-card3 {
-  width: 547.5px;
-  height: 367.4px;
+.last-section-card3{
   background: url(./assets/Mask-group-3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 69px;
 }
 @media (max-width: 768px) {
   .last-section-card {
