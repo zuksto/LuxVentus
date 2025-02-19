@@ -758,9 +758,9 @@ hr {
 }
 /* fifth section  */
 .last-section{
-  margin-top: 88.2px;
   margin-bottom: 69px;
   padding: 0 118px;
+  margin-top: 88px;
 }
 
 .last-section-card{
@@ -854,6 +854,8 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 547px;
+  height: 367px;
 }
 
 .last-section-card2{
@@ -861,6 +863,8 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 547px;
+  height: 367px;
 }
 
 .last-section-card3{
@@ -868,6 +872,8 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 547px;
+  height: 367px;
 }
 @media (max-width: 768px) {
   .last-section-card {
