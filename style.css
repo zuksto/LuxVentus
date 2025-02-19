@@ -8,6 +8,9 @@ body {
   background: rgba(249, 249, 249, 1);
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
