@@ -22,58 +22,78 @@
   </head>
   <body>
     <!-- Header section with burger menu -->
-    <header>
-      <div class="container">
-        <div class="header">
-          <nav>
-            <div class="navigation-logo">
-              <a href="index.html"
-                ><img src="./assets/logo.png" alt="Lux Ventus Logo"
-              /></a>
-            </div>
-            <div class="navigation-content">
-              <ul class="navigation-links">
-                <li><a href="#first-section">Fashion</a></li>
-                <li><a href="#second-section">Lifestyle</a></li>
-                <li><a href="#third-section">Spiritual</a></li>
-                <li><a href="#fourth-section">Mental Health</a></li>
-                <li><a href="#last-container">Contact Us</a></li>
-                <li><img src="./assets/search1.png" alt="Search Icon" /></li>
-              </ul>
-            </div>
-            <div class="burger-menu" onclick="toggleMenu()">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-          </nav>
-        </div>
+    <!-- Header section with burger menu -->
+    <div class="container">
+      <div class="header">
+        <nav>
+          <div class="navigation-logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+          <div class="navigation-content">
+            <ul class="navigation-links">
+              <li>
+                <a href="#">Fashion</a>
+              </li>
+              <li>
+                <a href="#">Lifestyle</a>
+              </li>
+              <li>
+                <a href="#">Spiritual</a>
+              </li>
+              <li>
+                <a href="#">Mental Health</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <img src="./assets/search1.png" alt="" />
+            </ul>
+          </div>
+          <div class="burger-menu" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
       </div>
-    </header>
+    </div>
+
     <!-- Mobile Navigation Menu -->
     <div class="mobile-nav" id="mobileNav">
       <ul>
-        <li><a href="#first-section">Fashion</a></li>
-        <li><a href="#second-section">Lifestyle</a></li>
-        <li><a href="#third-section">Spiritual</a></li>
-        <li><a href="#fourth-section">Mental Health</a></li>
-        <li><a href="#last-container">Contact Us</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Spiritual</a></li>
+        <li><a href="#">Mental Health</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
 
-    <!-- First Section -->
-    <section class="first-section" id="first-section">
-      <div class="first-section-main">
-        <div class="first-section-main-text">
-          <h5>LUX VENTUS MAGAZINE</h5>
-          <h1>We Are the <span>Ventus Fashion</span></h1>
-          <p>
-            We like to gossip about everything, but we will never forget the
-            daily fashion dose.
-          </p>
+    <!-- JavaScript for Burger Menu -->
+    <script>
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobileNav");
+        mobileNav.classList.toggle("open");
+      }
+    </script>
+
+    <!-- Section part -->
+    <div class="container">
+      <section>
+        <div class="first-section-main">
+          <div class="first-section-main-text">
+            <h5>LUX VENTUS MAGAZINE</h5>
+            <br />
+            <h1>We Are the <span>Ventus Fashion</span></h1>
+            <br />
+            <p>
+              We like to gossip about everything, but we will <br />
+              never forget the daily fashion dose.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Second Section -->
     <section class="second-section" id="second-section">
@@ -116,8 +136,8 @@
 
     <!-- Third Section -->
     <section class="third-section" id="third-section">
-      <div class="fashion">
-        <button>FASHION</button>
+      <div class="third-section-first">
+        <a href="#">FASHION</a>
       </div>
       <div class="trends">
         <div class="mallory-reyn">
@@ -198,7 +218,7 @@
         </div>
       </div>
     </div>
-
+    <div class="container">
     <section class="last-container" id="last-container">
       <div class="last-section">
         <div class="last-section-cards">
@@ -299,7 +319,9 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
+
     <div class="footer">
       <footer>
         <div class="footer-1">
