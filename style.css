@@ -626,6 +626,7 @@ hr {
 .trending-section {
   max-width: 1204px;
   margin: 0 auto;
+  margin-bottom: 88.2px;
 }
 .trending-section h2 {
   margin-top: 97px;
